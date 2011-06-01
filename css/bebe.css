@@ -1,0 +1,64 @@
+body {
+  background-image: -webkit-gradient(
+    linear, left top, right bottom,
+    from(#282277),
+    color-stop(0.2, #587ada),
+    color-stop(0.4, #8acca2),
+    color-stop(0.6, #aabb55),
+    color-stop(0.8, #dd7722),
+    to(#ee2200)
+    );
+  background-image: -moz-linear-gradient(top left, #282277, #587ada, #8acca2, #aabb55, #dd7722, #ee2200);
+  background-image: -o-linear-gradient(top left, #282277, #587ada, #8acca2, #aabb55, #dd7722, #ee2200);
+  margin: 0;
+}
+#content {}
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+#slideshow {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  width: 420px;
+  height: 420px;
+  margin-left: -210px;
+  border: 0;
+  padding: 20px;
+  background: black;
+  overflow: hidden;
+  z-index: 1;
+}
+#slideshow .pic {
+  position: absolute;
+  z-index: 10;
+  padding: 0;
+  border: 2px solid #eeeeee;
+  width: 420px;
+  height: 420px;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+}
+#controls {
+  overflow: auto;
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+}
+.btn {
+  font-size: 2em;
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+#prev {
+  float: left;
+}
+#next {
+  float: right;
+}
