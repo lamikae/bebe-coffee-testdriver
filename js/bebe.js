@@ -15,7 +15,7 @@ addPics = function() {
     el.className = "pic";
     if (i > 0) {
       el.style.display = 'none';
-      offset_left = MAGIC_W + 19;
+      offset_left = MAGIC_W + 18;
       $(el).offset({
         left: offset_left
       });

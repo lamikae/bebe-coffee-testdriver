@@ -24,7 +24,7 @@ body {
   left: 50%;
   width: 420px;
   height: 420px;
-  margin-left: -210px;
+  margin-left: -230px; /* -210px - 20px = -width/2 - padding */
   border: 0;
   padding: 20px;
   background: black;
@@ -50,8 +50,8 @@ body {
 }
 .btn {
   font-size: 2em;
-  margin: 1em;
-  padding: 1em;
+  padding: 0.4em;
+  margin-top: 1em;
   border: 1px solid black;
   color: black;
   cursor: pointer;
